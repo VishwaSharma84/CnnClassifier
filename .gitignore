@@ -145,3 +145,6 @@ artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2022-09-24-11-00-35/v
 mlruns/*
 research/mlflow_dir/mlruns/*
 prediction_service/model.h5
+src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
+artifacts/prepar_base_model/base_model_updated.h5
+artifacts/prepar_base_model/model.h5
