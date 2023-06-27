@@ -1,3 +1,7 @@
+"""This file is used to create local packages.
+"""
+
+
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as f:

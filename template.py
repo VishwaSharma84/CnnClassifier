@@ -1,3 +1,6 @@
+"""This file is used to create a basic skeleton or the folder structure for the project
+"""
+
 import os
 from pathlib import Path
 import logging
