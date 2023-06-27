@@ -83,3 +83,35 @@ stages:
       hash: md5
       md5: e9f1d24752b2cd849037346814bd97a1
       size: 59337520
+  evaluation:
+    cmd: python src/cnnClassifier/pipeline/stage_04_evalution.py
+    deps:
+    - path: artifacts/data_ingestion/PetImages
+      hash: md5
+      md5: 3a5cf86541f22c236620ce5b952ad684.dir
+      size: 848866410
+      nfiles: 24998
+    - path: artifacts/training/model.h5
+      hash: md5
+      md5: e9f1d24752b2cd849037346814bd97a1
+      size: 59337520
+    - path: configs/config.yaml
+      hash: md5
+      md5: dc29a796a38a808cf94ba6e7bf32d0c7
+      size: 831
+    - path: src/cnnClassifier/pipeline/stage_04_evalution.py
+      hash: md5
+      md5: a0c434b85484bc2f5b06d93e953daedf
+      size: 721
+    params:
+      params.yaml:
+        BATCH_SIZE: 16
+        IMAGE_SIZE:
+        - 224
+        - 224
+        - 3
+    outs:
+    - path: scores.json
+      hash: md5
+      md5: 195b7548a5434c103a57f77a1ec56053
+      size: 73
