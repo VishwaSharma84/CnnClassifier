@@ -1,15 +1,15 @@
 from cnnClassifier.config.configuration import ConfigurationManager
-from cnnClassifier.components.evaluation import Evaluation
+from cnnClassifier.components.prepare_base_model import PrepareBaseModel
 from cnnClassifier import logger
 
-STAGE_NAME = "Evaluation stage"
+STAGE_NAME = "Prepare base model"
 
 def main():
     config = ConfigurationManager()
-    val_config = config.get_validation_config()
-    evaluation = Evaluation(val_config)
-    evaluation.evaluation()
-    evaluation.save_score()
+    prepare_base_model_config = config.get_prepare_base_model_config()
+    prepare_base_model = PrepareBaseModel(config=prepare_base_model_config)
+    prepare_base_model.get_base_model()
+    prepare_base_model.update_base_model()
 
 if __name__ == '__main__':
     try:

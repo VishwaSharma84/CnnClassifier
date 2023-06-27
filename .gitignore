@@ -145,9 +145,3 @@ artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2022-09-24-11-00-35/v
 mlruns/*
 research/mlflow_dir/mlruns/*
 prediction_service/model.h5
-src/cnnClassifier/pipeline/stage_02_prepare_base_model.py
-artifacts/prepar_base_model/base_model_updated.h5
-artifacts/prepar_base_model/model.h5
-artifacts/.gitignore
-artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-06-27-11-54-48/train/events.out.tfevents.1687847090.DESKTOP-HKJEOIO.25828.0.v2
-artifacts/prepare_callbacks/tensorboard_log_dir/tb_logs_at_2023-06-27-11-54-48/validation/events.out.tfevents.1687848193.DESKTOP-HKJEOIO.25828.1.v2
